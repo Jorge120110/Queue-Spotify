@@ -11,8 +11,7 @@ Abra una terminal en la carpeta raíz de la librería.
 
 Ejecute el siguiente comando:
 
-Bash
-  ````mvn clean install````
+  mvn clean install
   
 Esto compilará el código y guardará el archivo .jar en su repositorio local de Maven (.m2), permitiendo que el proyecto Handler lo consuma.
 
@@ -61,4 +60,5 @@ Interfaz de Consola: Uso del carácter de escape \r (Carriage Return). Esto perm
 Barra de Progreso Visual: Se muestra un indicador gráfico [#####-----] que representa el porcentaje de avance de la canción en tiempo real.
 
 Contador y Tiempo Total: Al finalizar la playlist, el sistema arroja un reporte detallado con el total de canciones reproducidas y el tiempo acumulado de la sesión de escucha.
+
 
