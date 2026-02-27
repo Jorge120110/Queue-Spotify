@@ -11,7 +11,7 @@ Abra una terminal en la carpeta raíz de la librería.
 
 Ejecute el siguiente comando:
 
-  mvn clean install
+  ````mvn clean install````
   
 Esto compilará el código y guardará el archivo .jar en su repositorio local de Maven (.m2), permitiendo que el proyecto Handler lo consuma.
 
@@ -22,15 +22,14 @@ Abra una terminal en dicha carpeta.
 
 Ejecute el comando:
 
-Bash
-mvn clean package
+  ````mvn clean package````
+  
 Este comando generará el ejecutable en la carpeta target, incluyendo un archivo con el sufijo -jar-with-dependencies.jar que contiene todo lo necesario para correr la simulación.
 
 ### 3. Cómo ejecutar desde la consola
 Para una experiencia visual correcta (donde la barra de progreso se actualice en una sola línea), ejecute el siguiente comando desde la carpeta queueHandler:
 
-Bash
-java -jar target/queueHanlder-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+````java -jar target/queueHanlder-0.0.1-SNAPSHOT-jar-with-dependencies.jar````
 
 ## Explicación del Diseño y Decisiones Técnicas
 Estructura de Datos Manual
@@ -61,4 +60,5 @@ Barra de Progreso Visual: Se muestra un indicador gráfico [#####-----] que repr
 
 Contador y Tiempo Total: Al finalizar la playlist, el sistema arroja un reporte detallado con el total de canciones reproducidas y el tiempo acumulado de la sesión de escucha.
 
-
+### Aclaracion de la extensión 
+En un inicio todo funcionaba bien, al agregar otra cancion, el contador funciona estatico en unas y en otras no, pero funciona el contador.
